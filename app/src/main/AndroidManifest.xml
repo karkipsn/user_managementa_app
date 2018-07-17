@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.colors2web.user_management">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activities.MainActivity"
+            android:label="@string/app_name">
+            android:parentActivityName=".SplashActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SplashActivity" />
+        </activity>
+
+        <activity android:name=".RecycleViews.EmployeeView"
+            android:label="@string/app_name">
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.colors2web.user_management.Activities.MainActivity" />
+        </activity>
+
+        <activity android:name=".Activities.HomePageActivity">
+
+        </activity>
+
+        <activity android:name=".Activities.UserActivity">
+        </activity>
+
+        <activity android:name=".Activities.DepartmentActivity">
+        </activity>
+
+
+
+
+        <activity android:name=".Activities.TaskActivity">
+
+        </activity>
+
+        <activity android:name=".RecycleViews.DepartmentsView">
+            android:label="@string/app_name">
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.colors2web.user_management.Activities.HomePageActivity" />
+
+        </activity>
+
+
+        <activity android:name=".RecycleViews.TaskView">
+            android:label="@string/app_name">
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.colors2web.user_management.Activities.HomePageActivity" />
+
+        </activity>
+
+        <activity android:name=".RecycleViews.DepartmentDetails">
+        </activity>
+
+        <activity android:name=".Activities.EmployeeActivity">
+        </activity>
+
+        <activity android:name=".Activities.EmployeePut">
+        </activity>
+
+        <activity android:name=".Activities.DepartmentPut">
+        </activity>
+
+        <activity android:name=".Activities.TaskPut">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aandroid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="60dp">
+
+        <Button
+
+            android:id="@+id/btnuser"
+            style="?android:textAppearanceSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_round"
+            android:hint="Users"
+            android:textColor="@color/icons"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btndepartment"
+            style="?android:textAppearanceSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_round"
+            android:hint="Department"
+            android:textColor="@color/icons"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnemployee"
+            style="?android:textAppearanceSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_round"
+            android:hint="Employee"
+            android:textColor="@color/icons"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btntask"
+            style="?android:textAppearanceSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_round"
+            android:hint="Task"
+            android:textColor="@color/icons"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnrecycle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_round"
+            android:hint="RDep."
+            android:textColor="@color/icons"
+            android:textColorHighlight="@color/icons"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

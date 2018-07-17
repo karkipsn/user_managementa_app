@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dis_empid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:paddingBottom="10sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tv_ename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Employee Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tv_eadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Employee Address"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tv_ebirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Employee BirthDate"
+                    android:inputType="date"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tv_edate_hired"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Employee Hire Date"
+                    android:inputType="date"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Department Id:"
+                android:id="@+id/dep_drop"
+                android:layout_gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="#ffffff"
+                android:dropDownHeight="155dp"
+                android:cursorVisible="false"
+                android:maxLines="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableEnd="@drawable/icon_dropdown"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+
+                android:id="@+id/btn_empupdate"
+                style="?android:textAppearanceSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:layout_marginBottom="16sp"
+                android:background="@drawable/button_round"
+                android:hint="Update"
+                android:textColor="@color/icons"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
